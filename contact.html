@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>eCommerce challenge</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/templatemo.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <style>
+      #chat2 .form-control {
+        border-color: transparent;
+      }
+
+      #chat2 .form-control:focus {
+        border-color: transparent;
+        box-shadow: inset 0px 0px 0px 1px transparent;
+      }
+
+      .divider:after,
+      .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a
+          class="navbar-brand text-success logo h1 align-self-center"
+          href="index.html"
+        >
+          Jp
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#templatemo_main_nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          id="templatemo_main_nav"
+        >
+          <div class="flex-fill">
+            <ul
+              class="nav navbar-nav d-flex justify-content-between mx-lg-auto"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin.html">Admin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar align-self-center d-flex">
+            <div
+              class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputMobileSearch"
+                  placeholder="Search ..."
+                />
+                <div class="input-group-text">
+                  <i class="fa fa-fw fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <a
+              class="nav-icon d-none d-lg-inline"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#templatemo_search"
+            >
+              <i class="fa fa-fw fa-search text-dark mr-2"></i>
+            </a>
+            <a
+              class="nav-icon position-relative text-decoration-none"
+              href="cart.html"
+            >
+              <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+              <span
+                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
+                >7</span
+              >
+            </a>
+            <a
+              class="nav-icon position-relative text-decoration-none"
+              href="user.html"
+            >
+              <i class="fa fa-fw fa-user text-dark mr-3"></i>
+              <span
+                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
+                >+99</span
+              >
+            </a>
+
+            <button type="button" class="btn btn-info mx-3">
+              <a class="nav-link" href="login.html">login</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Header -->
+    <section style="background-color: #eee">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-6">
+            <div class="card" id="chat2">
+              <div
+                class="card-header d-flex justify-content-between align-items-center p-3"
+              >
+                <h5 class="mb-0">Chat</h5>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-mdb-ripple-color="dark"
+                >
+                  X
+                </button>
+              </div>
+              <div
+                class="card-body"
+                data-mdb-perfect-scrollbar="true"
+                style="position: relative"
+              >
+                <div class="d-flex flex-row justify-content-start">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                  <div>
+                    <p
+                      class="small p-2 ms-3 mb-1 rounded-3"
+                      style="background-color: #f5f6f7"
+                    >
+                      Hi
+                    </p>
+                    <p
+                      class="small p-2 ms-3 mb-1 rounded-3"
+                      style="background-color: #f5f6f7"
+                    >
+                      How are you ...???
+                    </p>
+                    <p
+                      class="small p-2 ms-3 mb-1 rounded-3"
+                      style="background-color: #f5f6f7"
+                    >
+                      What are you doing tomorrow? Can we come up a bar?
+                    </p>
+                    <p class="small ms-3 mb-3 rounded-3 text-muted">23:58</p>
+                  </div>
+                </div>
+
+                <div class="divider d-flex align-items-center mb-4">
+                  <p class="text-center mx-3 mb-0" style="color: #a2aab7">
+                    Today
+                  </p>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                  <div>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      Hiii, I'm good.
+                    </p>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      How are you doing?
+                    </p>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      Long time no see! Tomorrow office. will be free on sunday.
+                    </p>
+                    <p
+                      class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end"
+                    >
+                      00:06
+                    </p>
+                  </div>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                </div>
+
+                <div class="d-flex flex-row justify-content-start mb-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                  <div>
+                    <p
+                      class="small p-2 ms-3 mb-1 rounded-3"
+                      style="background-color: #f5f6f7"
+                    >
+                      Okay
+                    </p>
+                    <p
+                      class="small p-2 ms-3 mb-1 rounded-3"
+                      style="background-color: #f5f6f7"
+                    >
+                      We will go on Sunday?
+                    </p>
+                    <p class="small ms-3 mb-3 rounded-3 text-muted">00:07</p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end mb-4">
+                  <div>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      That's awesome!
+                    </p>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      I will meet you Sandon Square sharp at 10 AM
+                    </p>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      Is that okay?
+                    </p>
+                    <p
+                      class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end"
+                    >
+                      00:09
+                    </p>
+                  </div>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                </div>
+
+                <div class="d-flex flex-row justify-content-start mb-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                  <div>
+                    <p
+                      class="small p-2 ms-3 mb-1 rounded-3"
+                      style="background-color: #f5f6f7"
+                    >
+                      Okay i will meet you on Sandon Square
+                    </p>
+                    <p class="small ms-3 mb-3 rounded-3 text-muted">00:11</p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end mb-4">
+                  <div>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      Do you have pictures of Matley Marriage?
+                    </p>
+                    <p
+                      class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end"
+                    >
+                      00:11
+                    </p>
+                  </div>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                </div>
+
+                <div class="d-flex flex-row justify-content-start mb-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                  <div>
+                    <p
+                      class="small p-2 ms-3 mb-1 rounded-3"
+                      style="background-color: #f5f6f7"
+                    >
+                      Sorry I don't have. i changed my phone.
+                    </p>
+                    <p class="small ms-3 mb-3 rounded-3 text-muted">00:13</p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end">
+                  <div>
+                    <p
+                      class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+                    >
+                      Okay then see you on sunday!!
+                    </p>
+                    <p
+                      class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end"
+                    >
+                      00:15
+                    </p>
+                  </div>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                    alt="avatar 1"
+                    style="width: 45px; height: 100%"
+                  />
+                </div>
+              </div>
+              <div
+                class="card-footer text-muted d-flex justify-content-start align-items-center p-3"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                  alt="avatar 3"
+                  style="width: 40px; height: 100%"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="exampleFormControlInput1"
+                  placeholder="Type message"
+                />
+                <a class="ms-1 text-muted" href="#!"
+                  ><i class="fas fa-paperclip"></i
+                ></a>
+                <a class="ms-3 text-muted" href="#!"
+                  ><i class="fas fa-smile"></i
+                ></a>
+                <a class="ms-3" href="#!"><i class="fas fa-paper-plane"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+       <!-- Start Footer -->
+       <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 pt-5">
+              <h2 class="h2 text-success border-bottom pb-3 border-light logo">
+                Jp Shop
+              </h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                  123 Consectetur at ligula 10660
+                </li>
+                <li>
+                  <i class="fa fa-phone fa-fw"></i>
+                  <a class="text-decoration-none" href="tel:080-000-0000"
+                    >080-000-0000</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-envelope fa-fw"></i>
+                  <a class="text-decoration-none" href="mailto:info@company.com"
+                    >info@company.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-md-4 pt-5">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">
+                Products
+              </h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
+                <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Women's Shoes</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Popular Dress</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Gym Accessories</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-4 pt-5">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">
+                Further Info
+              </h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="index.html">Home</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">About Us</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Shop Locations</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                <li>
+                  <a class="text-decoration-none" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row text-light mb-4">
+            <div class="col-12 mb-3">
+              <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+              <ul class="list-inline text-left footer-icons">
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="http://facebook.com/"
+                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://twitter.com/"
+                    ><i class="fab fa-twitter fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-auto">
+              <label class="sr-only" for="subscribeEmail">Email address</label>
+              <div class="input-group mb-2">
+                <input
+                  type="text"
+                  class="form-control bg-dark border-light"
+                  id="subscribeEmail"
+                  placeholder="Email address"
+                />
+                <div class="input-group-text btn-success text-light">
+                  Subscribe
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+  
+      <!-- Start Script -->
+      <script src="assets/js/jquery-1.11.0.min.js"></script>
+      <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/templatemo.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <!-- End Script -->
+    </body>
+  </html>
+  
